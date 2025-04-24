@@ -1,0 +1,84 @@
+/* General Reset and Dark Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Center the container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Table Styles */
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.crypto-table th,
+.crypto-table td {
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.crypto-table th {
+  background-color: #292929;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #bbbbbb;
+}
+
+.crypto-table td img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .crypto-table th,
+  .crypto-table td {
+    padding: 8px;
+    font-size: 0.75rem;
+  }
+
+  .crypto-table td img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Positive and Negative Changes */
+.positive {
+  color: #00ff7f;
+  font-weight: bold;
+}
+
+.negative {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+/* Supply bars or chart placeholder */
+.supply-bar {
+  height: 6px;
+  background: linear-gradient(to right, #4caf50, #8bc34a);
+  border-radius: 3px;
+}
+
+/* Fancy 7D chart image placeholder */
+.chart-img {
+  width: 80px;
+  height: 32px;
+  object-fit: contain;
+  filter: brightness(0.9);
+}
